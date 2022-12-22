@@ -1,0 +1,12 @@
+/*Globales*/
+:root {
+    --backgroundMain: #FFFFFF;
+}
+html {
+    font-size: 62.5%;/*Px to REM*/
+}
+
+body {
+    font-size: 16px;/*Px to REM*/
+    background-color: var(--backgroundMain);
+}
