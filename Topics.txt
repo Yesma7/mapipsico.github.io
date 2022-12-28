@@ -1,0 +1,29 @@
+Texto Opcion 2
+Psicóloga profesional titulada con experienca en -------------, graduada de la Universidad Cooperativa de Colombia con especialización en Psicología Clínica y de la salud de la Universidad Autónoma de Bucaramanga.
+
+A través de dinámicas de atención ya sea online o presencial, generamos un ambiente de escucha activa y retro alimentación, esto con el fin de que tengas la libertad de decir y liberar lo que sientes permitiendonos juntos como equipo, identificar para actuar y desarrollar habilidades que logren transformar tu vida
+
+
+********************************************************
+Icons
+
+** Ear
+<i class="fa-solid fa-ear-listen"></i>
+
+** Brain
+<i class="fa-solid fa-brain"></i>
+
+** Heart
+<i class="fa-solid fa-heart-pulse"></i>
+
+** Arrow
+<i class="fa-solid fa-arrow-right"></i>
+
+** Communication -- Comments
+<i class="fa-regular fa-comments"></i>
+
+** Integrity -- hands-asl-interpreting
+<i class="fa-solid fa-hands-asl-interpreting"></i>
+
+** Success -- person-walking-arrow-right
+<i class="fa-solid fa-person-walking-arrow-right"></i>

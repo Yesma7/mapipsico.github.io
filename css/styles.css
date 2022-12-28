@@ -1,0 +1,119 @@
+/**Globales**/
+:root {
+    /**Colors**/
+    --backgroundBody: #FFFFFF;
+    --purple: #D520F2;
+    --boldFont: #212B36;
+    --grayFont: #676767;
+    --roundedRight: #F8F8F8;
+    --aptitudeOne: #4BA0FF ;
+    --aptitudeTwo: #FBD06F ;
+    --aptitudeThree: #A097FF ;
+    --aptitudeFour: #48DB7A;
+    --lightGreen: #13C296;
+    --closeCircle: #FF9494;
+}
+html {
+    font-size: 62.5%;/*PX to REM*/
+}
+body {
+    background-color: var(--backgroundBody);
+    font-size: 16px;/*PX to REM*/
+}
+
+
+/***********************************/
+/***********Section Hero*********/
+
+            /**Navbar**/
+.navbar {
+    background-color: transparent;
+    padding: 3rem!important;
+}
+.navbar .container-fluid {
+    column-gap: 25rem;
+}
+.navbar-brand {
+    margin-left: 12rem;
+}
+.nav-item .nav-link {
+    font-size: 1.6rem;
+    color: var(--boldFont)!important;
+    font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav {
+    column-gap: 8rem;
+}
+.navbar-expand-lg .navbar-collapse {
+    column-gap: 2rem;
+}
+.navbar__login {
+    width: 27rem;
+    margin-right: 7rem;
+}
+.navbar__login .nav-item {
+    list-style: none;
+}
+.btn-login.btn-success {
+    width: 11rem;
+    height: 3.5rem;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+            /**Hero**/
+.hero__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero__content--leftMenu {
+    height: 90rem;
+    background-color: var(--roundedRight);
+    border-bottom-right-radius: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftMenu-text {
+    margin: 0 auto;
+    display: block;
+}
+.purple-small {
+    color: var(--purple);
+    font-size: 1.8rem;
+    /*font-weight: bold;*/
+}
+.leftMenu-title {
+    color: var(--boldFont);
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+.gray-small {
+    color: var(--grayFont);
+    font-size: 1.8rem;
+}
+.hero__content--rightMenu {
+    background-image: url(../img/HeroImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/***********************************/
+/***********Section About Me*********/
+#aboutMe {
+    margin-top: 2rem;
+}
+
+            /**Emoji**/
+.emoji__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 25rem;
+}
+.emoji__list--item {
+    list-style: none;
+    font-size: 8rem;
+    color: var(--purple);
+}
