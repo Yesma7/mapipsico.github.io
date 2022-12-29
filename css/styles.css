@@ -20,7 +20,10 @@ body {
     background-color: var(--backgroundBody);
     font-size: 16px;/*PX to REM*/
 }
-
+.customContainer {
+    margin-left: 7rem;
+    margin-right: 5rem;
+}
 
 /***********************************/
 /***********Section Hero*********/
@@ -117,3 +120,62 @@ body {
     font-size: 8rem;
     color: var(--purple);
 }
+
+            /**Content**/
+.aboutMe__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.leftMenu-textAbout {
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+.leftMenu-image {
+    background-image: url(../img/MainPic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-radius: 50%;
+}
+.aboutMe__content--rightMenu {
+    height: 90rem;
+    background-color: var(--roundedRight);
+    border-bottom-right-radius: 15rem;
+    margin-top: 12rem;
+}
+.rightMenu-textAbout {
+    margin: 5rem;
+    font-size: 2rem;
+}
+.topics__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+    list-style: none;
+}
+.topics__box {
+    width: 10rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #FFF;
+    font-size: 3.5rem;
+}
+.box-one {
+    background-color: var(--aptitudeOne);
+}
+.box-two {
+    background-color: var(--aptitudeTwo);
+}
+.box-three {
+    background-color: var(--aptitudeThree);
+}
+.box-four {
+    background-color: var(--aptitudeFour);
+}
+.topics__list--title {
+    font-size: 3rem;
+}
+
