@@ -136,6 +136,13 @@ body {
     background-position: center;
     height: 100vh;
     border-radius: 50%;
+    position: relative;
+}
+.leftMenu-image img {
+    position: absolute;
+    margin-left: 15rem;
+    z-index: -1;
+    bottom: 0;
 }
 .aboutMe__content--rightMenu {
     height: 90rem;
@@ -179,3 +186,27 @@ body {
     font-size: 3rem;
 }
 
+
+/***********************************/
+/***********Section Pricing*********/
+.pricing__box {
+    width: 120rem;
+    height: 76rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2rem;
+}
+.pricing__imgCorner {
+    position: absolute;
+}
+.pricing__table {
+    position: relative;
+    width: 109rem;
+    margin: 13rem auto;
+}
+.table-head tr th:nth-child(2) {
+    padding: 0 23rem;
+}
+.table-body tr:nth-child(2) {
+    padding: 0 23rem;  
+}
