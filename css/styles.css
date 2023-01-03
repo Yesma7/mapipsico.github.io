@@ -24,7 +24,9 @@ body {
     margin-left: 7rem;
     margin-right: 5rem;
 }
-
+.text-justify {
+    text-align: justify;
+}
 /***********************************/
 /***********Section Hero*********/
 
@@ -199,14 +201,66 @@ body {
 .pricing__imgCorner {
     position: absolute;
 }
-.pricing__table {
+.pricing__box--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    margin: 13rem 5rem;
     position: relative;
-    width: 109rem;
-    margin: 13rem auto;
 }
-.table-head tr th:nth-child(2) {
-    padding: 0 23rem;
+.card {
+    background: transparent!important;
+    border: none!important;
+    align-items: center;
 }
-.table-body tr:nth-child(2) {
-    padding: 0 23rem;  
+.card-body {
+    flex: 0 1 auto!important;
+    width: 18rem;
+    height: 15rem;
+}
+.card-body button {
+    width: 100%;
+}
+.card-body .btn-success {
+    background-color: var(--lightGreen);
+    border-color: var(--lightGreen);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.card-body .btn-primary {
+    background-color: var(--purple);
+    border-color: var(--purple);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+ul.list-group {
+    align-items: center;
+    margin-top: 2rem;
+}
+ul.list-group.list-group-flush {
+    align-items: baseline;
+}
+.list-group-flush>.list-group-item {
+    border: none;
+}
+.list-group-item {
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem!important;
+}
+.card-subtitle {
+     font-size: 1.8rem;
+     font-weight: bold;
+}
+.card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}.card-text {
+    font-size: 1.3rem;
+    color: var(--grayFont);
+}
+.fa-circle-check {
+    color: var(--lightGreen);
+}
+.fa-circle-xmark {
+    color: var(--closeCircle);
 }
