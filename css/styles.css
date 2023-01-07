@@ -264,3 +264,21 @@ ul.list-group.list-group-flush {
 .fa-circle-xmark {
     color: var(--closeCircle);
 }
+
+
+/***********************************/
+/***********Section Booking*********/
+#booking {
+    margin: 8rem 0;
+    padding: 10rem 0;
+
+}
+.booking__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.booking__box--img {
+    height: 65rem;
+}
