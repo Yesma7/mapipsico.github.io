@@ -2,6 +2,7 @@
 :root {
     /**Colors**/
     --backgroundBody: #FFFFFF;
+    --whiteCream: #F8F9FF;
     --purple: #D520F2;
     --boldFont: #212B36;
     --grayFont: #676767;
@@ -191,6 +192,9 @@ body {
 
 /***********************************/
 /***********Section Pricing*********/
+#pricing {
+    margin-top: 10rem;
+}
 .pricing__box {
     width: 120rem;
     height: 76rem;
@@ -269,16 +273,82 @@ ul.list-group.list-group-flush {
 /***********************************/
 /***********Section Booking*********/
 #booking {
-    margin: 8rem 0;
-    padding: 10rem 0;
-
+    margin: 20rem 0;
 }
 .booking__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+
+    background-image: linear-gradient(to bottom,#D520F2 -100%, transparent);
+    padding-top: 20rem;
+}
+.booking__box--text p {
+    margin-left: 15rem;
+    margin-top: 5rem;
+}
+span .text-secondary {
+    font-size: 1.6rem;
+    color: var(--boldFont)!important;
+}
+.fa-rocket {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+.booking__box--right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 25rem 0;
+}
+.booking__box--right h2 {
+    position: absolute;
+    z-index: 10;
+    padding-bottom: 20rem;
+}
+.booking__box--right a {
+    position: absolute;
+    z-index: 10;
+
+    font-size: 15rem;
+    color: var(--aptitudeFour);
+}
+.booking__box--right a:hover {
+    color: var(--purple);
 }
 .booking__box--img {
     height: 65rem;
+    position: absolute;
+    z-index: 1;
+}
+
+/***********************************/
+/***********Section Testimonial*********/
+.carousel-inner {
+    display: flex;
+    justify-content: space-evenly;
+}
+.carousel-item {
+    background-color: var(--whiteCream);
+    width: 30%!important;
+    margin: 0 auto!important;
+    padding: 2rem;
+}
+.carousel-aligment {
+    display: flex;
+    align-items: center;
+}
+.carousel__box--img {
+    background-image: url(../img/Texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 16.5rem;
+    width: 16.5rem;
+}
+.carousel__box--text {
+    margin-left: 2rem;
+}
+p.primary {
+    font-size: 1.5rem;
 }
