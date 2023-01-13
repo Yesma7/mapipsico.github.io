@@ -20,6 +20,13 @@ html {
 body {
     background-color: var(--backgroundBody);
     font-size: 16px;/*PX to REM*/
+    min-height: 100vh;
+    max-width: 100%;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .customContainer {
     margin-left: 7rem;
@@ -89,7 +96,7 @@ body {
 .purple-small {
     color: var(--purple);
     font-size: 1.8rem;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 .leftMenu-title {
     color: var(--boldFont);
@@ -104,6 +111,38 @@ body {
     background-image: url(../img/HeroImage.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/*-----------Responsive-------------*/
+/*----Small Devices----*/
+@media (min-width:480px) {
+    /*Hero*/
+    #hero {
+        width: 142vh;
+    }
+    .emoji__list {
+        margin-left: 5rem;
+        justify-content: normal!important;
+    }
+
+    /*ÄboutMe*/
+    #aboutMe {
+        width: 142vh; 
+    }
+    .leftMenu-title {
+        font-size: 3.5rem;
+    }
+    .leftMenu-image {
+        height: 130vh!important;
+        border-radius: 30%!important;
+    }
+    .leftMenu-image img {
+        margin-left: 1rem!important;
+    }
+    .aboutMe__content--rightMenu {
+        height: 110rem!important;
+    }
+
 }
 
 /***********************************/
@@ -220,6 +259,8 @@ body {
 .card-body {
     flex: 0 1 auto!important;
     width: 18rem;
+}
+.space {
     height: 15rem;
 }
 .card-body button {
@@ -351,4 +392,94 @@ span .text-secondary {
 }
 p.primary {
     font-size: 1.5rem;
+}
+
+
+/***********************************/
+/***********Section Contact*********/
+#contact {
+    display: grid;
+    height: 50rem;
+    align-items: center;
+    background-color: palegoldenrod;
+    margin-top: 15rem;
+    background-color: #F4F7FF;
+}
+.contact__box--text {
+    margin-left: 15rem;
+    margin-top: 5rem;
+}
+.contact__box--text h1 {
+    font-size: 4rem;
+}
+.contact__box--text .purple-small {
+    margin-left: 18rem;
+    margin-bottom: 5rem;
+}
+.contact__box--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+}
+.circle {
+    width: 13rem;
+    height: 13rem;
+    background-color: #F7F8FA;
+    border-radius: 50%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.circle__icons {
+    font-size: 3.5rem;
+    color: var(--purple);
+}
+.circle p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.contact__box--cards .card .card-body {
+    display: flex;
+    justify-content: center;
+}
+.contact__box--cards .card .card-body p {
+font-size: 1.6rem;
+}
+
+
+/***********************************/
+/**************Footer**************/
+.footer {
+    background-color: var(--purple);
+}
+.footer__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.footer__cards .card .card-body h5 {
+    font-size: 1.8rem;
+    color: var(--whiteCream);
+}
+.footer__cards .card .list-group-item {
+    background-color: var(--purple);
+    color: var(--whiteCream);
+
+}
+.social {
+    display: flex!important;
+    flex-direction: row!important;
+}
+.social li {
+    font-size: 4rem;
+}
+.fa-facebook {
+    color: var(--whiteCream);
+}
+.fa-square-instagram {
+    color: var(--whiteCream);
 }
